@@ -1,6 +1,17 @@
 {
     "settings": {
-        "workbench.experimental.gettingStarted": true,
-        "workbench.startupEditor": "gettingStarted"
-    }
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"workbench.experimental.gettingStarted": true,
+		"workbench.startupEditor": "gettingStarted"
+	},
+	"build": {
+		"dockerfile": ".devcontainer/Dockerfile",
+		"args": {
+			"VARIANT": "14"
+		}
+	},
+	"extensions": [
+		"dbaeumer.vscode-eslint"
+	],
+	"remoteUser": "node"
 }
